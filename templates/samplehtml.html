@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Amanda </title>
+</head>
+
+
+
+<style>
+	body
+	{
+		background-color: lightblue;
+	}
+	h1
+	{
+		color: pink;
+		
+
+	}
+</style>
+
+<body>
+	<h1> Hola {{ name }}</h1>
+	<div>
+		<ul>
+			{% for i in range(10) %}
+			
+			{% if i%2 == 0 %}
+			<li style = "color:green"> item {{i}}</li>
+			{% else %}
+			<li> item {{i}}</li>
+			{% endif %}
+			{% endfor %}
+		</ul>
+	</div>
+	<p> My name is Amanda and I'm a student at SEAS at Columbia. </p>
+	<form>
+		<label for="What's your name?"> What's your name? </label>
+		<input type="text" name="name" id="name">
+	</form>
+	<br/>
+	<img src = "http://www.columbia.edu/files/columbia/imagecache/gallery/gallery/columbiacampus.fromnwcb.eileenbarroso.jpg">
+</body>
+</html>
